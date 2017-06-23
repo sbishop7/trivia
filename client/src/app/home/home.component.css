@@ -1,0 +1,28 @@
+*{
+    /*border: thin dotted red;*/
+}
+#wrapper{
+    width: 970px;
+}
+#nav{
+    display: inline-block;
+    vertical-align: top;
+    width: 900px;
+    padding: 0px;
+}
+#navLogout{
+    display: inline-block;
+    vertical-align: top;
+    width: 65px;
+    text-align: right;
+}
+ul{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+}

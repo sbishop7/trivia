@@ -1,0 +1,14 @@
+<div id="wrapper">
+  <div id="nav">
+    <ul>
+      <li><a  [routerLink]="['/home']">Home</a></li>
+      <li> | </li>
+      <li><a  [routerLink]="['/home', 'new_question']">Add a Question</a></li>
+    </ul>
+  </div>
+  <div id="navLogout">
+    <a  href="" (click)="logout()">Logout</a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

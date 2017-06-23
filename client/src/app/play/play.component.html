@@ -1,0 +1,27 @@
+<div id="container">
+  <p>Hi {{user.username}}!</p>
+  <p>Choose an answer for each of the questions and submit the test once done.</p>
+  <p>Good luck!</p>
+
+  <form #formData="ngForm" (submit)="submit()">
+    <div class="question"><label>1. {{ trivia_questions[0].question }} </label>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess1" value="{{ trivia_questions[0].answers[0] }}">{{ trivia_questions[0].answers[0] }}</p>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess1" value="{{ trivia_questions[0].answers[1] }}">{{ trivia_questions[0].answers[1] }}</p>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess1" value="{{ trivia_questions[0].answers[2] }}">{{ trivia_questions[0].answers[2] }}</p>
+    </div>
+    <div class="question"><label>2. {{ trivia_questions[1].question }} </label>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess2" value="{{ trivia_questions[1].answers[0] }}">{{ trivia_questions[1].answers[0] }}</p>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess2" value="{{ trivia_questions[1].answers[1] }}">{{ trivia_questions[1].answers[1] }}</p>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess2" value="{{ trivia_questions[1].answers[2] }}">{{ trivia_questions[1].answers[2] }}</p>
+    </div>
+    <div class="question"><label>3. {{ trivia_questions[2].question }} </label>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess3" value="{{ trivia_questions[2].answers[0] }}">{{ trivia_questions[2].answers[0] }}</p>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess3" value="{{ trivia_questions[2].answers[1] }}">{{ trivia_questions[2].answers[1] }}</p>
+      <p><input type="radio" name="guess1" [(ngModel)]="guess3" value="{{ trivia_questions[2].answers[2] }}">{{ trivia_questions[2].answers[2] }}</p>
+    </div>
+      
+    <button (click)="cancel()" class="cancel">Cancel</button>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+
+</div>

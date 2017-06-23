@@ -1,0 +1,12 @@
+*{
+    /*border: thin dotted red;*/
+}
+#container{
+    width: 970px;
+    padding: 20px
+}
+.question{
+    border: thin solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}

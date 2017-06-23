@@ -1,0 +1,21 @@
+*{
+    /*border: thin dotted red;*/
+}
+#container{
+    padding: 20px;
+}
+#play{
+    border: thin solid black;
+    background-color: silver;
+    margin: auto;
+    text-align: center;
+    width: 33%;
+    padding: 10px;
+    margin-top: 20px;
+}
+#playBtn{
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    padding: 5px 20px;
+}

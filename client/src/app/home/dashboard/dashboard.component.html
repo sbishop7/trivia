@@ -1,0 +1,24 @@
+<div id="container">
+
+  <div *ngIf="message">
+    {{ message }}
+  </div>
+
+  <div id="play">
+    <button id="playBtn" (click)="lets_play()">Play!</button>
+    <p>Click the button above to start the trivia game.</p>
+  </div>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Score</th>
+    <th>Percentage</th>
+
+  </tr>
+  <tr *ngFor="let score of scores">
+    <td>{{ score.username }}</td>
+    <td>{{ score.score }}/3</td>
+    <td>{{ score.percentage }}%</td>
+  </tr>
+</table>
+</div>
